@@ -1,0 +1,117 @@
+/* =============================
+    font family for the page
+=================================*/
+*{
+    font-family: 'Rubik', sans-serif;
+}
+
+/* =================================
+        common to this page 
+======================================*/
+h1{
+    font-size: 2rem;
+}
+
+p, a{
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+li{
+    list-style-type: none;
+}
+
+main,footer{
+    padding: 0.5em;
+}
+body{
+    background-color: aliceblue;
+
+}
+/*==================================
+        header section
+===================================== */
+header{
+    width: 100%;
+    min-height: 300px;
+    height: auto;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+header article{
+    margin: 0 auto;
+}
+header article p{
+    font-size: 1.5rem;
+}
+
+/*==================================
+        projects section
+==================================== */
+.project-section{
+    max-width: 600px;
+    width: 90%;
+    height: auto;
+    padding: 1em;
+    margin: 0.75em auto;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.project-section *{
+    padding: 0.5em;
+}
+
+.project-section div {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.project-section div a{
+    width: 95%;
+    background-color: antiquewhite;
+    text-align: center;
+    margin: 0.25em auto;
+    padding: 0.5em;
+}
+/* =================================
+        footer section
+======================================*/
+footer{
+    font-family: 'Rubik', sans-serif;
+    width: 90%;
+    min-height: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+footer *{
+    margin: 10px auto;
+}
+footer p{
+    font-size: 1.5rem;
+}
+
+footer ul li a{
+    font-size: 1.2rem;
+}
+
+footer ul li a:is(:hover, :focus){
+    color: aqua;
+}

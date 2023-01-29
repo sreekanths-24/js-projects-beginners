@@ -3,6 +3,7 @@
 =================================*/
 *{
     font-family: 'Rubik', sans-serif;
+    color: #282130;
 }
 
 /* =================================
@@ -29,7 +30,7 @@ main,footer{
     padding: 0.5em;
 }
 body{
-    background-color: aliceblue;
+    background-color: #fdfcdc;
 
 }
 /*==================================
@@ -58,8 +59,8 @@ header article p{
     width: 90%;
     height: auto;
     padding: 1em;
-    margin: 0.75em auto;
-    background-color: aqua;
+    margin: 1.5em auto;
+    background-color: #f18a85;
     display: flex;
     align-items: center;
     flex-direction: column;

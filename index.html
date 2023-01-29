@@ -18,6 +18,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
 
+    <!-- == rellaxjs == -->
+    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+
     <!-- To run the web application in full-screen -->
     <meta name="apple-mobile-web-app-capable" content="yes">
 
@@ -34,12 +37,12 @@
         <header>
             <article>
                 <p>
-                    Welcome!! In this page I have created some simple js projects.
+                    Welcome! checkout some of the cool projects I have working on!
                 </p>
             </article>
         </header>
         
-        <section id="calculator" class="project-section">
+        <section class="project-section rellax" id="calculator">
             <h1 class="section-heading">Calculator App</h1>
             <p class="section-desciption">Simple calculator made with html5, css3 and js</p>
             <div class="link-section">
@@ -48,7 +51,7 @@
             </div>
         </section>
 
-        <section class="project-section" id="quote-generator">
+        <section class="project-section rellax" id="quote-generator">
             <h1 class="section-heading">Random Quotes Generator</h1>
             <p class="section-desciption">Simple website that generates random quotes made with html5, css3 and js.</p>
             <div class="link-section">
@@ -56,7 +59,7 @@
                 <a href="./random-quotes/random-quotes.html">veiw live</a>
             </div>
         </section>        
-        <section class="project-section" id="r-p-c">
+        <section class="project-section rellax" id="r-p-c">
             <h1 class="section-heading">Rock, Paper, Scissors</h1>
             <p class="section-desciption">A game of Rock, Paper, Scissors made with html, css, js.</p>
             <div class="link-section">
@@ -65,7 +68,7 @@
             </div>
         </section>
 
-        <section class="project-section" id="tic-tac-toe">
+        <section class="project-section rellax" id="tic-tac-toe">
             <h1 class="section-heading">TIC TAC TOE</h1>
             <p class="section-desciption">A game of TIC TAC TOE made with html, css, js.</p>
             <div class="link-section">
@@ -75,7 +78,7 @@
         </section>
 
 
-        <section class="project-section" id="to-do-list">
+        <section class="project-section rellax" id="to-do-list">
             <h1 class="section-heading">To Do List</h1>
             <p class="section-desciption">Simple simple To Do List app made with html5, css3 and js</p>
             <div class="link-section">
@@ -84,7 +87,7 @@
             </div>
         </section>
 
-        <section class="project-section" id="weather-app">
+        <section class="project-section rellax" id="weather-app">
             <h1 class="section-heading">Weather App</h1>
             <p class="section-desciption">Simple weather app made with html5, css3 and js</p>
             <div class="link-section">
@@ -95,7 +98,7 @@
     </main>
     
     <footer>
-        <p>Follow me on social media</p>
+        <p>Connect with me.</p>
         <ul>
             <li><a href="https://sreekanthsanthosh.netlify.app/"><i class="fa-solid fa-link"></i> Personal Website</a></li>
             <li><a href="https://www.github.com/sreekanths-24/"><i class="fa-brands fa-github"></i> Github</a></li>
@@ -108,5 +111,10 @@
                      
                 
     <script src="scripts/main.js"></script>
+    <script>
+          var rellax = new Rellax('.rellax', {
+            speed: 1,
+        });
+    </script>
 </body>
 </html>

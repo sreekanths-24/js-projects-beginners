@@ -114,5 +114,5 @@ footer ul li a{
 }
 
 footer ul li a:is(:hover, :focus){
-    color: aqua;
+    color: #f18a85;
 }

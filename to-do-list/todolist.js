@@ -1,6 +1,13 @@
 const inputBox = document.getElementById('input-box');
 const listContainer = document.getElementById('list-container');
 
+// Add an event listener to the input element for the "keydown" event
+inputBox.addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+        addTask();
+    }
+});
+
 function addTask() {
     if (inputBox.value === '') {//if the input box is empty
         alert('Please enter a task');//alert the user to enter a task

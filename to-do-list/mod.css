@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: rubik, sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #153677, #4e085f);
+    padding: 10px;
+}
+
+.todoapp, .all-lists{
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px; 
+}
+
+
+.todoapp h2{
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.todoapp h2 img{
+    width: 30px;
+    margin-left: 10px;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    background: #edeef0;
+    border-radius: 30px;
+    margin-bottom: 25px;
+    padding: 20px;
+}
+.show{
+    display: block;
+}
+.row input, .new-tasks {
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.add-new-item {
+    border: none;
+    outline: none;
+    padding: 12px 30px;
+    background: #ff5945;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 40px;
+    align-self: flex-end;
+
+}
+
+.remove-new-item {
+    border: none;
+    outline: none;
+    padding: 12px 30px;
+    background: #ff5945;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 40px;
+    align-self: flex-start;
+    position: relative;
+    bottom: 38px;
+}
+
+ul li, .new-list-item{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before, .new-list-item::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+
+ul li.checked, .new-list-item.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before , .new-list-item.checked::before{
+    background-image: url(images/checked.png);
+}
+
+ul li span, .new-list-item-span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover, .new-list-item-span:hover{
+    background-color: #edeef0;
+
+}

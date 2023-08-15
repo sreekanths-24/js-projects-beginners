@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+
+    <!-- == main style sheets == -->
+    <link rel="stylesheet" href="../styles/all.css">
+
+    <link rel="stylesheet" href="mod.css">
+
+    <!-- == google font link == -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <div class="todoapp">
+            <h2>To Do List <img src="./images/icon.png" alt=""></h2>
+            <div class="row">
+                <input type="text" placeholder="Enter list title" id="list-title-box">
+                <button id="create-list-button" class="add-new-item" onclick="createList()">Create List</button>
+            </div>
+        </div>
+        <div id="list-of-lists" >
+            <!-- Lists will be added here dynamically -->
+        </div>
+    </div>
+<script src="mod.js"></script>
+</body>
+</html>

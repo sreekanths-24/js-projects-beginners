@@ -52,6 +52,12 @@
         header {
             z-index: 1; /* Adjust the z-index as needed */
         }
+        /* Custom hover effect for cards */
+        .card:hover {
+            transform: scale(1.05); /* Increase the size on hover */
+            transition: transform 0.3s ease-in-out; /* Add a smooth transition */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Add a shadow on hover */
+        }
     </style>
 
     <!-- == Title of this page == -->
@@ -63,7 +69,7 @@
         <header class="w-100 position-fixed top-0  bg-primary">
             
             
-        <!-- off canvas  fa-bounce -->
+        <!-- off canvas   -->
         <a class="btn btn-primary w-100" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" style="height: 7vh; min-height: 50px; max-height: 100px;">
             <div id="logo" >JS Projects For Beginners</div>
             <i class="fa-solid fa-bars" id="menu-icon"></i>
@@ -128,9 +134,9 @@
                         <h5 class="card-title">Calculator App</h5>
                         <p class="card-text">Simple calculator made with HTML5, CSS3, and JS</p>
                     </div>
-                    <div class="card-footer  d-flex align-items-center justify-content-between">
-                        <a href="https://sreekanths-24.github.io/calculator/index.html" class="btn btn-primary">View Project</a>
-                        <a href="https://github.com/sreekanths-24/calculator" class="btn btn-secondary">View Code</a>
+                    <div class="card-footer  d-grid gap-2">
+                        <a href="https://sreekanths-24.github.io/calculator/index.html" class="btn btn-primary btn-lg">View Project</a>
+                        <a href="https://github.com/sreekanths-24/calculator" class="btn btn-secondary btn-lg">View Code</a>
                     </div>
                     </div>
                 </div>
@@ -142,9 +148,9 @@
                         <h5 class="card-title">To Do List</h5>
                         <p class="card-text">Simple To-Do List app made with HTML5, CSS3, and JS</p>
                     </div>
-                    <div class="card-footer  d-flex align-items-center justify-content-between">
-                        <a href="./to-do-list/to-do-list.html" class="btn btn-primary">View Project</a>
-                        <a href="https://github.com/sreekanths-24/js-projects-beginners/tree/master/to-do-list" class="btn btn-secondary">View Code</a>
+                    <div class="card-footer  d-grid gap-2">
+                        <a href="./to-do-list/to-do-list.html" class="btn btn-primary btn-lg">View Project</a>
+                        <a href="https://github.com/sreekanths-24/js-projects-beginners/tree/master/to-do-list" class="btn btn-secondary btn-lg">View Code</a>
                     </div>
                     </div>
                 </div>
@@ -156,9 +162,9 @@
                         <h5 class="card-title">Random Password Generator</h5>
                         <p class="card-text">Simple Random Password Generator made with HTML5, CSS3, and JS</p>
                     </div>
-                    <div class="card-footer  d-flex align-items-center justify-content-between">
-                        <a href="./random-password-generator/RPG.html" class="btn btn-primary">View Project</a>
-                        <a href="https://github.com/sreekanths-24/js-projects-beginners/tree/master/random-password-generator" class="btn btn-secondary">View Code</a>
+                    <div class="card-footer  d-grid gap-2">
+                        <a href="./random-password-generator/RPG.html" class="btn btn-primary btn-lg">View Project</a>
+                        <a href="https://github.com/sreekanths-24/js-projects-beginners/tree/master/random-password-generator" class="btn btn-secondary btn-lg">View Code</a>
                     </div>
                     </div>
                 </div>
@@ -172,9 +178,9 @@
                         <h5 class="card-title">Random Quotes Generator</h5>
                         <p class="card-text">Simple website that generates random quotes made with HTML5, CSS3, and JS.</p>
                     </div>
-                    <div class="card-footer  d-flex align-items-center justify-content-between">
-                        <a href="./random-quotes/random-quotes.html" class="btn btn-primary">View Project</a>
-                        <a href="#" class="btn btn-secondary">View Code</a>
+                    <div class="card-footer  d-grid gap-2">
+                        <a href="./random-quotes/random-quotes.html" class="btn btn-primary btn-lg">View Project</a>
+                        <a href="#" class="btn btn-secondary btn-lg">View Code</a>
                     </div>
                     </div>
                 </div>
@@ -186,9 +192,9 @@
                         <h5 class="card-title">Rock, Paper, Scissors</h5>
                         <p class="card-text">A game of Rock, Paper, Scissors made with HTML, CSS, and JS.</p>
                     </div>
-                    <div class="card-footer  d-flex align-items-center justify-content-between">
-                        <a href="./rock-paper-scissors/r-p-s.html" class="btn btn-primary">View Project</a>
-                        <a href="#" class="btn btn-secondary">View Code</a>
+                    <div class="card-footer  d-grid gap-2">
+                        <a href="./rock-paper-scissors/r-p-s.html" class="btn btn-primary btn-lg">View Project</a>
+                        <a href="#" class="btn btn-secondary btn-lg">View Code</a>
                     </div>
                     </div>
                 </div>
@@ -200,9 +206,9 @@
                         <h5 class="card-title">TIC TAC TOE</h5>
                         <p class="card-text">A game of TIC TAC TOE made with HTML, CSS, and JS.</p>
                     </div>
-                    <div class="card-footer  d-flex align-items-center justify-content-between">
-                        <a href="./tic-tac-toe/tic-tac-toe.html" class="btn btn-primary">View Project</a>
-                        <a href="#" class="btn btn-secondary">View Code</a>
+                    <div class="card-footer  d-grid gap-2">
+                        <a href="./tic-tac-toe/tic-tac-toe.html" class="btn btn-primary btn-lg">View Project</a>
+                        <a href="#" class="btn btn-secondary btn-lg">View Code</a>
                     </div>
                     </div>
                 </div>
@@ -216,9 +222,9 @@
                         <h5 class="card-title">Weather App</h5>
                         <p class="card-text">Simple weather app made with HTML5, CSS3, and JS</p>
                     </div>
-                    <div class="card-footer  d-flex align-items-center justify-content-between">
-                        <a href="./weather-app/weather-app.html" class="btn btn-primary">View Project</a>
-                        <a href="#" class="btn btn-secondary">View Code</a>
+                    <div class="card-footer  d-grid gap-2">
+                        <a href="./weather-app/weather-app.html" class="btn btn-primary btn-lg">View Project</a>
+                        <a href="#" class="btn btn-secondary btn-lg">View Code</a>
                     </div>
                     </div>
                 </div>

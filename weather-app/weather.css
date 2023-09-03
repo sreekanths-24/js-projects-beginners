@@ -1,97 +1,160 @@
-*{
+/* Reset styles and font family */
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
-body{
-    background-color: #222;
+/* Body styles */
+
+body {
+    background-color: #0099cc; /* Change the background color to a soothing blue */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
-.card{
+/* Card styles */
+
+.card {
     width: 90%;
     max-width: 470px;
     background: linear-gradient(135deg, #00feba, #5b548a);
     color: #fff;
-    margin: 100px auto 0;
     border-radius: 20px;
     padding: 40px 35px;
     text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
-.search{
-    width: 100%;
+/* Search styles */
+
+.search {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
-.search input{
+.search-container {
+    display: flex;
+    border: 2px solid #0099cc; /* Blue border */
+    border-radius: 30px;
+    overflow: hidden; /* Hide overflow for rounded corners */
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+}
+
+.search input {
+    flex: 1;
     border: 0;
     outline: 0;
-    background: #ebfffc;
-    color: #555;
+    background: transparent; /* Transparent input background */
+    color: #333; /* Dark text color */
     padding: 10px 25px;
     height: 60px;
-    border-radius: 30px;
-    flex: 1;
-    margin-right: 16px;
     font-size: 18px;
 }
 
-.search button{
+.search button {
     border: 0;
     outline: 0;
-    background: #ebfffc;
-    border-radius: 50%;
+    background: #0099cc; /* Blue button background color */
+    border-radius: 0 30px 30px 0; /* Rounded right side of the button */
     width: 60px;
     height: 60px;
     cursor: pointer;
 }
 
-.search button img{
-    width: 16px;
+.search button img {
+    width: 24px; /* Larger search icon */
 }
 
-.weather-icon{
+/* Weather styles */
+
+.weather-icon {
     width: 170px;
     margin-top: 30px;
 }
 
-.weather h1{
+.weather h1 {
     font-size: 80px;
     font-weight: 500;
+    color: #ffcc00; /* Yellow text color */
 }
-.weather h2{
+
+.weather h2 {
     font-size: 45px;
     font-weight: 400;
     margin-top: -10px;
 }
 
-.details{
+.details {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
     margin-top: 50px;
-
 }
 
-.col{
+.col {
     display: flex;
     align-items: center;
     text-align: left;
-
 }
-.col img{
+
+.col img {
     width: 40px;
     margin-right: 10px;
 }
 
-.humidity, .wind{
+.humidity, .wind {
     font-size: 28px;
     margin-top: -6px;
+    color: #0099cc; /* Blue text color */
 }
 
-/* https://api.openweathermap.org/data/2.5/weather?q=canada&appid=f81e7376c90f4d6bf05546de7d4662b0 */
+.weather {
+    display: none;
+}
+
+/* Media queries for improved responsiveness */
+
+@media (max-width: 768px) {
+    .card {
+        width: 80%;
+    }
+}
+
+@media (max-width: 576px) {
+    .card {
+        width: 90%;
+    }
+
+    .weather h1 {
+        font-size: 60px;
+    }
+
+    .weather h2 {
+        font-size: 35px;
+    }
+
+    .col img {
+        width: 30px;
+    }
+
+    .humidity, .wind {
+        font-size: 20px;
+    }
+}
+
+.error{
+    color: #555;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    display: none;
+}

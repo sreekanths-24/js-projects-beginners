@@ -9,17 +9,20 @@
     <meta name="description" content="This website contains links to some simple js projects.">
     
     <!-- == main style sheets == -->
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/styles.css">
+    <!-- <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/styles.css"> -->
     <link rel="stylesheet" href="styles/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- == google font link == -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
 
     <!-- == rellaxjs == -->
-    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script> -->
 
     <!-- To run the web application in full-screen -->
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -28,102 +31,211 @@
     <!-- Has no effect unless you have the previous meta tag -->
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
+    <style>
+        #menu-icon{
+            font-size: 2rem;
+            color: white;
+            top: 50%;
+            transform: translateY(-50%);
+            position: absolute; 
+            right: 20px;
+        }
+
+        #logo{
+            font-size: 1.3rem;
+            color: white;
+            top: 50%;
+            transform: translateY(-50%);
+            position: absolute; 
+            left: 20px;
+        }
+        header {
+            z-index: 1; /* Adjust the z-index as needed */
+        }
+    </style>
+
     <!-- == Title of this page == -->
     <title>JS Progects For Beginners</title>
 </head>
 <body>
 
     <main>
-        <header>
-            <article>
-                <p>
-                    Welcome!! checkout some of the cool projects I have been working on!
-                </p>
-            </article>
+        <header class="w-100 position-fixed top-0  bg-primary">
+            
+            
+        <!-- off canvas  fa-bounce -->
+        <a class="btn btn-primary w-100" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" style="height: 7vh; min-height: 50px; max-height: 100px;">
+            <div id="logo" >JS Projects For Beginners</div>
+            <i class="fa-solid fa-bars" id="menu-icon"></i>
+        </a>
+          
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Connect With Me</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <a href="https://sreekanthsanthosh.netlify.app/" style="text-decoration: none;">
+                            <i class="fa-solid fa-link"></i> Personal Website
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="https://www.github.com/sreekanths-24/" style="text-decoration: none;">
+                            <i class="fa-brands fa-github"></i> Github
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="mailto:sreekanthsanthosh17@gmail.com" style="text-decoration: none;">
+                            <i class="fa-solid fa-envelope"></i> Gmail
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="https://www.twitter.com/_Sreekanth_S_/" style="text-decoration: none;">
+                            <i class="fa-brands fa-twitter"></i> Twitter
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="https://www.linkedin.com/in/sreekanth-s-663418232" style="text-decoration: none;">
+                            <i class="fa-brands fa-linkedin"></i> Linkedin
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="https://www.youtube.com/@Sreekanth_S" style="text-decoration: none;">
+                            <i class="fa-brands fa-youtube"></i> Youtube
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+
         </header>
-        
-        <section class="project-section rellax" id="calculator">
-            <h1 class="section-heading">Calculator App</h1>
-            <p class="section-desciption">Simple calculator made with html5, css3 and js</p>
-            <div class="link-section">
-                <a href="https://github.com/sreekanths-24/calculator">veiw code</a>
-                <a href="https://sreekanths-24.github.io/calculator/index.html">veiw live</a>
-            </div>
-        </section>
+        <section class="container mt-5">
 
-        <section class="project-section rellax" id="to-do-list">
-            <h1 class="section-heading">To Do List</h1>
-            <p class="section-desciption">Simple simple To Do List app made with html5, css3 and js</p>
-            <div class="link-section">
-                <a href="https://github.com/sreekanths-24/js-projects-beginners/tree/master/to-do-list">veiw code</a>
-                <a href="./to-do-list/to-do-list.html">veiw live</a>
+            <p class="display-6 py-4">
+                Welcome!! checkout some of the cool projects I have been working on!
+            </p>
+  
+                    
+            <div class="container">
+                <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                    <img src="./images/calculator.png" class="card-img-top" alt="Calculator App">
+                    <div class="card-body">
+                        <h5 class="card-title">Calculator App</h5>
+                        <p class="card-text">Simple calculator made with HTML5, CSS3, and JS</p>
+                    </div>
+                    <div class="card-footer  d-flex align-items-center justify-content-between">
+                        <a href="https://sreekanths-24.github.io/calculator/index.html" class="btn btn-primary">View Project</a>
+                        <a href="https://github.com/sreekanths-24/calculator" class="btn btn-secondary">View Code</a>
+                    </div>
+                    </div>
+                </div>
+            
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                    <img src="./images/todo.png" class="card-img-top" alt="To Do List">
+                    <div class="card-body">
+                        <h5 class="card-title">To Do List</h5>
+                        <p class="card-text">Simple To-Do List app made with HTML5, CSS3, and JS</p>
+                    </div>
+                    <div class="card-footer  d-flex align-items-center justify-content-between">
+                        <a href="./to-do-list/to-do-list.html" class="btn btn-primary">View Project</a>
+                        <a href="https://github.com/sreekanths-24/js-projects-beginners/tree/master/to-do-list" class="btn btn-secondary">View Code</a>
+                    </div>
+                    </div>
+                </div>
+            
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                    <img src="./images/RPG.png" class="card-img-top" alt="Random Password Generator">
+                    <div class="card-body">
+                        <h5 class="card-title">Random Password Generator</h5>
+                        <p class="card-text">Simple Random Password Generator made with HTML5, CSS3, and JS</p>
+                    </div>
+                    <div class="card-footer  d-flex align-items-center justify-content-between">
+                        <a href="./random-password-generator/RPG.html" class="btn btn-primary">View Project</a>
+                        <a href="https://github.com/sreekanths-24/js-projects-beginners/tree/master/random-password-generator" class="btn btn-secondary">View Code</a>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            
+                <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                    <img src="./images/working.png" class="card-img-top" alt="Random Quotes Generator">
+                    <div class="card-body">
+                        <h5 class="card-title">Random Quotes Generator</h5>
+                        <p class="card-text">Simple website that generates random quotes made with HTML5, CSS3, and JS.</p>
+                    </div>
+                    <div class="card-footer  d-flex align-items-center justify-content-between">
+                        <a href="./random-quotes/random-quotes.html" class="btn btn-primary">View Project</a>
+                        <a href="#" class="btn btn-secondary">View Code</a>
+                    </div>
+                    </div>
+                </div>
+            
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                    <img src="./images/working.png" class="card-img-top" alt="Rock, Paper, Scissors">
+                    <div class="card-body">
+                        <h5 class="card-title">Rock, Paper, Scissors</h5>
+                        <p class="card-text">A game of Rock, Paper, Scissors made with HTML, CSS, and JS.</p>
+                    </div>
+                    <div class="card-footer  d-flex align-items-center justify-content-between">
+                        <a href="./rock-paper-scissors/r-p-s.html" class="btn btn-primary">View Project</a>
+                        <a href="#" class="btn btn-secondary">View Code</a>
+                    </div>
+                    </div>
+                </div>
+            
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                    <img src="./images/working.png" class="card-img-top" alt="TIC TAC TOE">
+                    <div class="card-body">
+                        <h5 class="card-title">TIC TAC TOE</h5>
+                        <p class="card-text">A game of TIC TAC TOE made with HTML, CSS, and JS.</p>
+                    </div>
+                    <div class="card-footer  d-flex align-items-center justify-content-between">
+                        <a href="./tic-tac-toe/tic-tac-toe.html" class="btn btn-primary">View Project</a>
+                        <a href="#" class="btn btn-secondary">View Code</a>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            
+                <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                    <img src="./images/weather.png" class="card-img-top" alt="Weather App">
+                    <div class="card-body">
+                        <h5 class="card-title">Weather App</h5>
+                        <p class="card-text">Simple weather app made with HTML5, CSS3, and JS</p>
+                    </div>
+                    <div class="card-footer  d-flex align-items-center justify-content-between">
+                        <a href="./weather-app/weather-app.html" class="btn btn-primary">View Project</a>
+                        <a href="#" class="btn btn-secondary">View Code</a>
+                    </div>
+                    </div>
+                </div>
+                </div>
             </div>
-        </section>
-        
-        <section class="project-section rellax" id="RPG">
-            <h1 class="section-heading">Random Password Generator</h1>
-            <p class="section-desciption">Simple Random Password Generator made with html5, css3 and js</p>
-            <div class="link-section">
-                <a href="https://github.com/sreekanths-24/js-projects-beginners/tree/master/random-password-generator">veiw code</a>
-                <a href="./random-password-generator/RPG.html">veiw live</a>
-            </div>
-        </section>
-
-        <section class="project-section rellax" id="quote-generator">
-            <h1 class="section-heading">Random Quotes Generator</h1>
-            <p class="section-desciption">Simple website that generates random quotes made with html5, css3 and js.</p>
-            <div class="link-section">
-                <a href="#">veiw code</a>
-                <a href="./random-quotes/random-quotes.html">veiw live</a>
-            </div>
-        </section>        
-        <section class="project-section rellax" id="r-p-c">
-            <h1 class="section-heading">Rock, Paper, Scissors</h1>
-            <p class="section-desciption">A game of Rock, Paper, Scissors made with html, css, js.</p>
-            <div class="link-section">
-                <a href="#">veiw code</a>
-                <a href="./rock-paper-scissors/r-p-s.html">veiw live</a>
-            </div>
-        </section>
-
-        <section class="project-section rellax" id="tic-tac-toe">
-            <h1 class="section-heading">TIC TAC TOE</h1>
-            <p class="section-desciption">A game of TIC TAC TOE made with html, css, js.</p>
-            <div class="link-section">
-                <a href="#">veiw code</a>
-                <a href="./tic-tac-toe/tic-tac-toe.html">veiw live</a>
-            </div>
-        </section>
-
-
-        <section class="project-section rellax" id="weather-app">
-            <h1 class="section-heading">Weather App</h1>
-            <p class="section-desciption">Simple weather app made with html5, css3 and js</p>
-            <div class="link-section">
-                <a href="#">veiw code</a>
-                <a href="./weather-app/weather-app.html">veiw live</a>
-            </div>
+  
+  
         </section>
     </main>
     
-    <footer class="rellax">
-        <p>Connect with me.</p>
-        <ul>
-            <li><a href="https://sreekanthsanthosh.netlify.app/"><i class="fa-solid fa-link"></i> Personal Website</a></li>
-            <li><a href="https://www.github.com/sreekanths-24/"><i class="fa-brands fa-github"></i> Github</a></li>
-            <li><a href="mailto:sreekanthsanthosh17@gmail.com"><i class="fa-solid fa-envelope"></i> Gmail</a></li>
-            <li><a href="https://www.twitter.com/_Sreekanth_S_/"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
-            <li><a href="https://www.linkedin.com/in/sreekanth-s-663418232"><i class="fa-brands fa-linkedin"></i> Linkedin</a></li>
-            <li><a href="https://www.youtube.com/@Sreekanth_S"><i class="fa-brands fa-youtube"></i> Youtube</a></li>
-        </ul>
-    </footer>
                      
-                
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <script src="scripts/main.js"></script>
-    <script>
+    <!-- <script>
           var rellax = new Rellax('.rellax', {
             speed: 1,
         });
-    </script>
+    </script> -->
 </body>
 </html>

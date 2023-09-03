@@ -1,0 +1,26 @@
+#menu-icon{
+    font-size: 2rem;
+    color: white;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute; 
+    right: 20px;
+}
+
+#logo{
+    font-size: 1.3rem;
+    color: white;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute; 
+    left: 20px;
+}
+header {
+    z-index: 1; /* Adjust the z-index as needed */
+}
+/* Custom hover effect for cards */
+.card:hover {
+    transform: scale(1.05); /* Increase the size on hover */
+    transition: transform 0.3s ease-in-out; /* Add a smooth transition */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Add a shadow on hover */
+}

@@ -43,14 +43,3 @@ document.addEventListener("touchend", (e) => {
         navItems.forEach(item => item.style.transform = 'translateX(0)');
     }
 });
-
-// Add animation for left and right movement
-navItems.forEach(item => {
-    item.addEventListener("mouseover", () => {
-        item.style.transform = 'translateX(-10px)';
-    });
-
-    item.addEventListener("mouseout", () => {
-        item.style.transform = 'translateX(0)';
-    });
-});
